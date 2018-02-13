@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         //Prepare Mock up Data
         val dataList = ArrayList<SamData>()
 
-        (0..10).mapTo(dataList) { SamData("Test Course Title " + it, R.drawable.menu_img) }
+        (0..10).mapTo(dataList) { SamData("Title " + it, R.drawable.menu_img) }
 
         //Blinding RecyclerView from XML
         val gridMenuRecyclerView = findViewById<RecyclerView>(R.id.grid_menu_recyclerview)
